@@ -6,15 +6,15 @@ import { calculateIncrement } from "../util/uniform.ts";
  * ```ts
  * quadraticBezier(9999999, .5,.7)
  * ```
- * @param num_points Number of points to obtain.
+ * @param numPoints Number of points to obtain.
  * @param coordinates Coordinates in the order p1.x, p1.y.
  */
 export default function quadraticBezier(
-  num_points: number,
+  numPoints: number,
   ...coordinates: [number, number]
 ): [number, number][] {
-  const curve: [number, number][] = new Array(num_points);
-  const increment = calculateIncrement(num_points);
+  const curve: [number, number][] = new Array(numPoints);
+  const increment = calculateIncrement(numPoints);
   let t = 0;
   let i = 0;
   do {

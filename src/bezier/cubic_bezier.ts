@@ -7,16 +7,16 @@ import { calculateIncrement } from "../util/uniform.ts";
  * ```ts
  * cubicBezier(9999999, .5,.7,.19,.96)
  * ```
- * @param num_points Number of points to obtain.
+ * @param numPoints Number of points to obtain.
  * @param coordinates Coordinates in the order p1.x, p1.y, p2.x, p2.y.
- * @returns Array of num_points points of the cubic bezier curve.
+ * @returns Array of numPoints points of the cubic bezier curve.
  */
-export function cubicBezier(
-  num_points: number,
+export default function cubicBezier(
+  numPoints: number,
   ...coordinates: [number, number, number, number]
 ): [number, number][] {
-  const curve: [number, number][] = new Array(num_points);
-  const increment = calculateIncrement(num_points);
+  const curve: [number, number][] = new Array(numPoints);
+  const increment = calculateIncrement(numPoints);
   let t = 0;
   let i = 0;
   do {

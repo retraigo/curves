@@ -1,0 +1,10 @@
+{
+    "name": "@retraigo/curve",
+    "version": "1.0.0",
+    "exclude": [
+        ".vscode"
+    ],
+    "exports":{
+        ".": "./mod.ts"
+    }
+}
