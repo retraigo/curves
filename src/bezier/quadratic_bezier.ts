@@ -4,7 +4,7 @@ import { calculateIncrement } from "../util/uniform.ts";
  * The curve begins at P0 and ends at P2.
  * P1 defines directions in which the curve travels.
  * ```ts
- * quadraticBezier(9999999, .5,.7)
+ * quadraticBezier(100, .5, .7)
  * ```
  * @param numPoints Number of points to obtain.
  * @param coordinates Coordinates in the order p1.x, p1.y.

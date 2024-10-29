@@ -5,7 +5,7 @@ import { calculateIncrement } from "../util/uniform.ts";
  * The curve begins at P0 and ends at P3.
  * P1 and P2 define directions in which the curve travels.
  * ```ts
- * cubicBezier(9999999, .5,.7,.19,.96)
+ * cubicBezier(100, .5, .7, .19, .96)
  * ```
  * @param numPoints Number of points to obtain.
  * @param coordinates Coordinates in the order p1.x, p1.y, p2.x, p2.y.
