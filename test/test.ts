@@ -1,6 +1,6 @@
-import { svgChart, catenary } from "../mod.ts";
+import { svgChart, cycloid } from "../mod.ts";
 
-const pts = catenary(90)
+const pts = cycloid(90, 1)
 
 const x = pts.map(x => x[0])
 const y = pts.map(x => x[1])
