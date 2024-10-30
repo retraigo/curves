@@ -14,12 +14,9 @@ export function svgChart(
   scatter = false,
   padding = 0.2
 ): string {
-    const all = standardize([x, y].flat(), [0 + padding, 1 - padding])
     
-  x = all.slice(0, x.length);
-  y = all.slice(x.length)
-
-  console.log(x, y)
+  x = standardize(x, [0 + padding, 1 - padding]);
+  y = standardize(y, [0 + padding, 1 - padding]);
 
   const res = {
     size: Math.max(...size),
